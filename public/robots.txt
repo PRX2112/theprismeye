@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://rudradigitalstudio.com/sitemap.xml
+
+# Disallow crawling of admin or private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+
+# Allow crawling of main content
+Allow: /portfolio
+Allow: /services
+Allow: /about
+Allow: /contact
+Allow: /client-proofing
+
+# Crawl delay (optional - be respectful to smaller sites)
+Crawl-delay: 1
