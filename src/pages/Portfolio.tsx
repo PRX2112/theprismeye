@@ -34,7 +34,7 @@ const Portfolio = () => {
   return (
     <div className="pt-20 min-h-screen bg-gradient-to-b from-slate-50 to-white">
       <Helmet>
-        <title>Portfolio | Rudra Digital Studio</title>
+        <title>Portfolio | The Prism Eye</title>
         <meta name="description" content="View our portfolio showcasing exquisite wedding, portrait, and event photography. See the quality and creativity we bring to every session." />
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -59,8 +59,8 @@ const Portfolio = () => {
                 key={category}
                 onClick={() => setSelectedCategory(category)}
                 className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 ${selectedCategory === category
-                    ? 'bg-gradient-to-r from-indigo-600 to-cyan-500 text-white shadow-lg'
-                    : 'glass text-gray-700 hover:bg-white/50'
+                  ? 'bg-gradient-to-r from-indigo-600 to-cyan-500 text-white shadow-lg'
+                  : 'glass text-gray-700 hover:bg-white/50'
                   }`}
               >
                 {category.charAt(0).toUpperCase() + category.slice(1)}

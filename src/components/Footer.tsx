@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Instagram, Facebook, Twitter } from 'lucide-react';
+import { Instagram, MessageCircle, Whatsapp } from 'lucide-react';
 import { contactInfo } from '../data/clientData';
 
 const Footer = () => {
@@ -18,15 +18,15 @@ const Footer = () => {
           <div className="space-y-6 animate-fade-in">
             <div className="flex items-center space-x-2">
               <span className="text-2xl font-bold tracking-tighter text-white transition-transform duration-300 group-hover:scale-105">
-              ThePrismEye
-            </span>
+                ThePrismEye
+              </span>
             </div>
             <p className="text-gray-300 leading-relaxed">
               Capturing life's precious moments with artistic vision and professional excellence.
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.instagram.com/the.nsclicks/"
                 className="group relative p-3 rounded-full bg-white/5 hover:bg-gradient-to-r hover:from-indigo-600 hover:to-cyan-500 transition-all duration-300 hover-glow"
               >
                 <Instagram className="h-5 w-5 text-gray-300 group-hover:text-white transition-colors" />
@@ -35,13 +35,7 @@ const Footer = () => {
                 href="#"
                 className="group relative p-3 rounded-full bg-white/5 hover:bg-gradient-to-r hover:from-indigo-600 hover:to-cyan-500 transition-all duration-300 hover-glow"
               >
-                <Facebook className="h-5 w-5 text-gray-300 group-hover:text-white transition-colors" />
-              </a>
-              <a
-                href="#"
-                className="group relative p-3 rounded-full bg-white/5 hover:bg-gradient-to-r hover:from-indigo-600 hover:to-cyan-500 transition-all duration-300 hover-glow"
-              >
-                <Twitter className="h-5 w-5 text-gray-300 group-hover:text-white transition-colors" />
+                <MessageCircle className="h-5 w-5 text-gray-300 group-hover:text-white transition-colors" />
               </a>
             </div>
           </div>
@@ -109,7 +103,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 mt-12 pt-8 text-center">
           <p className="text-gray-400">
-            &copy; 2025 <span className="text-gradient font-semibold">RUDRA DIGITAL STUDIO</span>. All rights reserved.
+            &copy; <span>{new Date().getFullYear()}</span> <span className="text-gradient font-semibold">The Prism Eye</span>. All rights reserved.
           </p>
         </div>
       </div>

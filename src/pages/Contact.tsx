@@ -133,8 +133,8 @@ const Contact = () => {
   return (
     <div className="pt-20 min-h-screen bg-white">
       <Helmet>
-        <title>Contact Us | Rudra Digital Studio</title>
-        <meta name="description" content="Get in touch with Rudra Digital Studio for bookings and inquiries. Visit our studio in Surat or contact us via phone or email." />
+        <title>Contact Us | The Prism Eye</title>
+        <meta name="description" content="Get in touch with The Prism Eye for bookings and inquiries. Visit our studio in Surat or contact us via phone or email." />
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}
@@ -360,14 +360,8 @@ const Contact = () => {
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-6">Follow Us</h3>
               <div className="flex space-x-4">
-                <a href="#" className="bg-gradient-to-r from-purple-400 to-pink-500 p-3 rounded-full text-white hover:shadow-lg transform hover:scale-110 transition-all duration-300">
+                <a href="https://www.instagram.com/the.nsclicks/" className="bg-gradient-to-r from-purple-400 to-pink-500 p-3 rounded-full text-white hover:shadow-lg transform hover:scale-110 transition-all duration-300">
                   <Instagram className="h-6 w-6" />
-                </a>
-                <a href="#" className="bg-blue-600 p-3 rounded-full text-white hover:shadow-lg transform hover:scale-110 transition-all duration-300">
-                  <Facebook className="h-6 w-6" />
-                </a>
-                <a href="#" className="bg-blue-400 p-3 rounded-full text-white hover:shadow-lg transform hover:scale-110 transition-all duration-300">
-                  <Twitter className="h-6 w-6" />
                 </a>
               </div>
               <p className="text-gray-600 mt-4">
@@ -376,14 +370,14 @@ const Contact = () => {
             </div>
 
             {/* Map Placeholder */}
-            <div className="mt-12">
+            {/* <div className="mt-12">
               <h3 className="text-xl font-bold text-gray-900 mb-6">Visit Our Studio</h3>
               <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center">
                 <div className="text-center">
                   <iframe className='bg-gray-200 h-64 rounded-lg flex items-center justify-center' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3713.4241050677374!2d72.9478442!3d21.4518697!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be03be85b04031d%3A0xa9765c95ad966d62!2sRudra%20Digital%20Studio!5e0!3m2!1sen!2sin!4v1756356992820!5m2!1sen!2sin" width="600" height="450" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 

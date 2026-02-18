@@ -8,15 +8,15 @@ const About = () => {
   return (
     <div className="pt-20 min-h-screen bg-gradient-to-b from-slate-50 to-white">
       <Helmet>
-        <title>About Us | Rudra Digital Studio</title>
-        <meta name="description" content="Learn more about Rudra Digital Studio, our journey, and the passionate team behind your beautiful memories. Over 15 years of experience." />
+        <title>About Us | The Prism Eye</title>
+        <meta name="description" content="Learn more about The Prism Eye, our journey, and the passionate team behind your beautiful memories. Over 15 years of experience." />
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}
         <ScrollReveal>
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              ABOUT <span className="text-gradient">RUDRA DIGITAL STUDIO</span>
+              ABOUT <span className="text-gradient">The Prism Eye</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Passionate storytellers dedicated to preserving your most precious memories through the art of photography.
@@ -30,7 +30,7 @@ const About = () => {
             <div className="space-y-6">
               <h2 className="text-3xl font-bold text-gray-900">Our Story</h2>
               <p className="text-gray-600 leading-relaxed">
-                Founded in 2010, Rudra Digital Studio began as a passion project born from a love of capturing
+                Founded in 2010, The Prism Eye began as a passion project born from a love of capturing
                 life's fleeting moments. What started as a small studio has grown into a trusted name in
                 professional photography, serving clients across the region with dedication and artistic vision.
               </p>
@@ -106,12 +106,12 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="text-center glass p-8 rounded-2xl">
                 <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-indigo-600 to-cyan-500 flex items-center justify-center text-white text-4xl font-bold">
-                  RD
+                  NS
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Rudra Patel</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">Naimish Sharma</h3>
                 <p className="text-cyan-600 font-semibold mb-4">Lead Photographer & Founder</p>
                 <p className="text-gray-600">
-                  With over 15 years of experience, Rudra brings artistic vision and technical expertise
+                  With over 15 years of experience, Naimish brings artistic vision and technical expertise
                   to every shoot, ensuring your memories are captured beautifully.
                 </p>
               </div>
@@ -119,7 +119,7 @@ const About = () => {
                 <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-rose-500 to-pink-500 flex items-center justify-center text-white text-4xl font-bold">
                   DS
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Digital Studio Team</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">ThePrismEye Team</h3>
                 <p className="text-rose-600 font-semibold mb-4">Creative Professionals</p>
                 <p className="text-gray-600">
                   Our talented team of photographers, editors, and creative professionals work together
@@ -155,7 +155,6 @@ const About = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                        <p className="text-sm text-gray-500">{testimonial.role}</p>
                       </div>
                     </div>
                   </div>

@@ -38,8 +38,8 @@ const Home = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Helmet>
-        <title>Rudra Digital Studio | Professional Photography Services in Surat</title>
-        <meta name="description" content="Capture your special moments with Rudra Digital Studio. Expert wedding, portrait, and event photography services in Surat, Gujarat." />
+        <title>The Prism Eye | Professional Photography Services in Surat</title>
+        <meta name="description" content="Capture your special moments with The Prism Eye. Expert wedding, portrait, and event photography services in Surat, Gujarat." />
       </Helmet>
       <Hero />
 
@@ -49,7 +49,7 @@ const Home = () => {
           <ScrollReveal>
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Welcome to <span className="text-gradient">RUDRA DIGITAL STUDIO</span>
+                Welcome to <span className="text-gradient">The Prism Eye</span>
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 We are passionate photographers dedicated to capturing your most precious moments with

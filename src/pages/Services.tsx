@@ -18,12 +18,12 @@ const Services = () => {
   return (
     <div className="pt-20 min-h-screen bg-white">
       <Helmet>
-        <title>Our Services | Rudra Digital Studio</title>
+        <title>Our Services | The Prism Eye</title>
         <meta name="description" content="Explore our professional photography packages for weddings, portraits, events, and products. Customizable options to suit your needs." />
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 py-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Our Services & Pricing
           </h1>
@@ -40,8 +40,8 @@ const Services = () => {
               key={key}
               onClick={() => setActiveService(key)}
               className={`flex items-center space-x-2 px-6 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 ${activeService === key
-                  ? "bg-gradient-to-r from-indigo-600 to-cyan-500 text-white shadow-lg"
-                  : "glass text-gray-700 hover:bg-white/50"
+                ? "bg-gradient-to-r from-indigo-600 to-cyan-500 text-white shadow-lg"
+                : "glass text-gray-700 hover:bg-white/50"
                 }`}
             >
               <service.icon className="h-5 w-5" />
@@ -51,7 +51,7 @@ const Services = () => {
         </div>
 
         {/* Service Details */}
-        <div className="mb-16">
+        <div className="mb-16 ">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center space-x-3 mb-4">
               <currentService.icon className="h-8 w-8 text-yellow-400" />
@@ -65,11 +65,11 @@ const Services = () => {
           </div>
 
           {/* Pricing Packages */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
             {currentService.packages.map((pkg, index) => (
               <div
                 key={index}
-                className={`bg - white border - 2 rounded - 2xl p - 8 shadow - lg hover: shadow - xl transition - all duration - 300 transform hover: scale - 105 ${index === 1 ? "border-yellow-400 relative" : "border-gray-200"
+                className={`bg-white border-2 rounded-2xl p-8 shadow-lg hover: shadow-xl transition-all duration-300 transform hover: scale-105 ${index === 1 ? "border-yellow-400 relative" : "border-gray-200"
                   } `}
               >
                 {index === 1 && (

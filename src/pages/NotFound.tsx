@@ -8,7 +8,7 @@ const NotFound = () => {
     return (
         <div className="min-h-screen bg-white flex items-center justify-center px-4">
             <Helmet>
-                <title>Page Not Found | Rudra Digital Studio</title>
+                <title>Page Not Found | The Prism Eye</title>
                 <meta name="description" content="The page you are looking for does not exist." />
             </Helmet>
 

@@ -9,20 +9,26 @@ export const GALLERY_PASSWORD = import.meta.env.VITE_GALLERY_PASSWORD || 'client
 // --- Hero & Home ---
 export const heroImages = [
     {
-        url: 'https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=format&fit=crop&w=1920&h=1080&q=80&format=webp',
+        url: '/images/cs/1.jpg',
         title: 'Wedding Photography',
         subtitle: 'Capturing your most precious moments',
         alt: 'Bride and groom sharing a romantic moment'
     },
     {
-        url: 'https://images.pexels.com/photos/1024961/pexels-photo-1024961.jpeg?auto=format&fit=crop&w=1920&h=1080&q=80&format=webp',
+        url: '/images/cs/2.jpg',
         title: 'Portrait Sessions',
         subtitle: 'Professional headshots and lifestyle portraits',
         alt: 'Portrait of a woman with soft lighting'
     },
     {
-        url: 'https://images.pexels.com/photos/1024963/pexels-photo-1024963.jpeg?auto=format&fit=crop&w=1920&h=1080&q=80&format=webp',
+        url: '/images/cs/3.jpg',
         title: 'Event Photography',
+        subtitle: 'Corporate events and celebrations',
+        alt: 'People celebrating at a corporate event'
+    },
+    {
+        url: '/images/cs/4.jpg',
+        title: 'Product Photography',
         subtitle: 'Corporate events and celebrations',
         alt: 'People celebrating at a corporate event'
     }
@@ -49,7 +55,7 @@ export const testimonials = [
     {
         name: 'Sarah & Michael',
         event: 'Wedding Photography',
-        text: 'RUDRA DIGITAL STUDIO captured our wedding day perfectly! Every moment was beautifully documented, and we couldn\'t be happier with the results.',
+        text: 'The Prism Eye captured our wedding day perfectly! Every moment was beautifully documented, and we couldn\'t be happier with the results.',
         rating: 5
     },
     {
@@ -329,19 +335,19 @@ export const contactInfo = [
     {
         icon: Phone,
         title: 'Phone',
-        details: '+91 9925862371',
-        action: 'tel:+919925862371'
+        details: '+91 7622890379',
+        action: 'tel:+917622890379'
     },
     {
         icon: Mail,
         title: 'Email',
-        details: 'rudradigitalstudio12@gmail.com',
-        action: 'mailto:rudradigitalstudio12@gmail.com'
+        details: 'theprismeye@gmail.com',
+        action: 'mailto:theprismeye@gmail.com'
     },
     {
         icon: MapPin,
         title: 'Studio Address',
-        details: 'Kosamba, Surat Gujarat 394120',
+        details: 'Surat, Gujarat 394120',
         action: 'https://www.google.com/maps/place/Rudra+Digital+Studio/@21.4517675,72.9453442,17z/data=!3m1!4b1!4m6!3m5!1s0x3be03be85b04031d:0xa9765c95ad966d62!8m2!3d21.4517625!4d72.9479191!16s%2Fg%2F11gmfydhzy?entry=ttu&g_ep=EgoyMDI1MDgyNC4wIKXMDSoASAFQAw%3D%3D'
     },
     {

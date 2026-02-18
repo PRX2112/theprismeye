@@ -77,7 +77,7 @@ const ClientProofing = () => {
   return (
     <div className="pt-20 min-h-screen bg-white">
       <Helmet>
-        <title>Client Proofing | Rudra Digital Studio</title>
+        <title>Client Proofing | The Prism Eye</title>
         <meta name="description" content="Private gallery access for clients to view and select their photos." />
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
