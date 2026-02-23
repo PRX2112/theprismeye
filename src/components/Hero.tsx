@@ -27,24 +27,25 @@ const Hero = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-              Wedding Photography
+              Your Love Story,{' '}<br />
+              <span className="text-gradient">Told Forever.</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto">
-              Capturing your most precious moments
+              We don't just take photos — we craft timeless memories that you'll treasure for generations. Let us turn your most beautiful day into art.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={() => navigate('/portfolio')}
                 className="group relative px-8 py-4 bg-gradient-to-r from-indigo-600 to-cyan-500 text-white font-semibold rounded-lg overflow-hidden hover-glow transition-all duration-300 hover:scale-105"
               >
-                <span className="relative z-10">View Portfolio</span>
+                <span className="relative z-10">✨ View Portfolio</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </button>
               <button
                 onClick={() => navigate('/contact')}
                 className="px-8 py-4 glass text-white font-semibold rounded-lg hover:bg-white/20 transition-all duration-300 hover:scale-105"
               >
-                Get in Touch
+                Book Your Date
               </button>
             </div>
           </motion.div>

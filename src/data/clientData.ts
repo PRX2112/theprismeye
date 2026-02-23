@@ -35,12 +35,16 @@ export const heroImages = [
 ];
 
 export const portfolioPreviewImages = [
-    'https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
-    'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
-    'https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
-    'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
-    'https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1',
-    'https://images.pexels.com/photos/1024961/pexels-photo-1024961.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1'
+    './images/w/1.jpg',
+    './images/p/6.jpg',
+    './images/p/3.jpg',
+    './images/w/6.jpg',
+    './images/w/10.jpg',
+    './images/w/9.jpg',
+    './images/e/2.jpg',
+    './images/e/4.jpg',
+    './images/pr/2.jpg',
+    './images/pr/3.jpg',
 ];
 
 // --- About Page ---
@@ -317,15 +321,36 @@ export const faqs = [
 export const portfolioCategories = ['all', 'weddings', 'portraits', 'events', 'products'];
 
 export const portfolioItems = [
-    { id: 1, category: 'weddings', image: 'https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1', title: 'Beach Wedding Ceremony' },
-    { id: 2, category: 'portraits', image: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1', title: 'Professional Headshot' },
-    { id: 3, category: 'weddings', image: 'https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1', title: 'Wedding Reception' },
-    { id: 4, category: 'events', image: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1', title: 'Corporate Event' },
-    { id: 5, category: 'portraits', image: 'https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1', title: 'Family Portrait' },
-    { id: 6, category: 'weddings', image: 'https://images.pexels.com/photos/1024961/pexels-photo-1024961.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1', title: 'Bridal Session' },
-    { id: 7, category: 'products', image: 'https://images.pexels.com/photos/1667088/pexels-photo-1667088.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1', title: 'Product Photography' },
-    { id: 8, category: 'events', image: 'https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1', title: 'Birthday Celebration' },
-    { id: 9, category: 'portraits', image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&dpr=1', title: 'Senior Portrait' },
+    { id: 1, category: 'weddings', image: './images/w/1.jpg', title: 'The Royal Gaze' },
+    { id: 2, category: 'portraits', image: './images/p/3.jpg', title: 'Modern Sapphire' },
+    { id: 3, category: 'weddings', image: './images/w/2.jpg', title: 'A Joyful Embrace' },
+    { id: 4, category: 'portraits', image: './images/p/1.jpg', title: 'The Silk Heritage' },
+    { id: 5, category: 'weddings', image: './images/w/3.jpg', title: 'A Forehead Kiss' },
+    { id: 6, category: 'portraits', image: './images/p/8.jpg', title: 'Classic Ivory' },
+    { id: 7, category: 'weddings', image: './images/w/4.jpg', title: 'Garland Exchange' },
+    { id: 8, category: 'portraits', image: './images/p/2.jpg', title: 'The Royal Union' },
+    { id: 9, category: 'weddings', image: './images/w/5.jpg', title: 'Palatial Grandeur' },
+    { id: 10, category: 'portraits', image: './images/p/10.jpg', title: 'Regal Majesty' },
+    { id: 11, category: 'weddings', image: './images/w/6.jpg', title: 'The Fun Perspective' },
+    { id: 12, category: 'events', image: './images/e/1.jpg', title: 'Birthday Event' },
+    { id: 13, category: 'weddings', image: './images/w/7.jpg', title: 'The Solitary Bride' },
+    { id: 14, category: 'events', image: './images/e/2.jpg', title: 'Corporate Event' },
+    { id: 15, category: 'weddings', image: './images/w/8.jpg', title: 'Neon Nights' },
+    { id: 16, category: 'events', image: './images/e/3.jpg', title: 'Concert Event' },
+    { id: 17, category: 'weddings', image: './images/w/9.jpg', title: 'Floral Blessings' },
+    { id: 18, category: 'events', image: './images/e/4.jpg', title: 'Birthday Celebration' },
+    { id: 19, category: 'weddings', image: './images/w/10.jpg', title: 'Beach Wedding Ceremony' },
+    { id: 20, category: 'events', image: './images/e/5.jpg', title: 'Reception Event' },
+    { id: 21, category: 'portraits', image: './images/p/7.jpg', title: 'The Violet Grace' },
+    { id: 22, category: 'products', image: './images/pr/1.jpg', title: 'Product 1' },
+    { id: 23, category: 'portraits', image: './images/p/9.jpg', title: 'Shimmering Elegance' },
+    { id: 24, category: 'products', image: './images/pr/2.jpg', title: 'Product 2' },
+    { id: 25, category: 'portraits', image: './images/p/6.jpg', title: 'The Radiant Bride' },
+    { id: 26, category: 'products', image: './images/pr/3.jpg', title: 'Product 3' },
+    { id: 27, category: 'portraits', image: './images/p/4.jpg', title: 'Temple Tradition' },
+    { id: 28, category: 'products', image: './images/pr/4.jpg', title: 'Product 4' },
+    { id: 29, category: 'portraits', image: './images/p/5.jpg', title: 'Golden Glow' },
+    { id: 30, category: 'products', image: './images/pr/5.jpg', title: 'Product 5' },
 ];
 
 export const sampleImages = portfolioItems.map(item => item.image);
