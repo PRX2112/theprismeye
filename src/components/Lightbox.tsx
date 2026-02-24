@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { X, ChevronLeft, ChevronRight, ZoomIn, ZoomOut, Download } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, Download } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 interface LightboxProps {
@@ -8,10 +8,11 @@ interface LightboxProps {
     onClose: () => void;
     onNext: () => void;
     onPrevious: () => void;
+    onGoTo: (index: number) => void;
     alt?: string;
 }
 
-const Lightbox = ({ images, currentIndex, onClose, onNext, onPrevious, alt = 'Image' }: LightboxProps) => {
+const Lightbox = ({ images, currentIndex, onClose, onNext, onPrevious, onGoTo, alt = 'Image' }: LightboxProps) => {
     useEffect(() => {
         const handleKeyDown = (e: KeyboardEvent) => {
             if (e.key === 'Escape') onClose();
@@ -74,10 +75,7 @@ const Lightbox = ({ images, currentIndex, onClose, onNext, onPrevious, alt = 'Im
                 {/* Previous Button */}
                 {images.length > 1 && (
                     <button
-                        onClick={(e) => {
-                            e.stopPropagation();
-                            onPrevious();
-                        }}
+                        onClick={(e) => { e.stopPropagation(); onPrevious(); }}
                         className="absolute left-4 top-1/2 -translate-y-1/2 z-50 p-4 glass rounded-full hover:bg-white/20 transition-all duration-300 group hover-glow"
                         aria-label="Previous image"
                     >
@@ -88,10 +86,7 @@ const Lightbox = ({ images, currentIndex, onClose, onNext, onPrevious, alt = 'Im
                 {/* Next Button */}
                 {images.length > 1 && (
                     <button
-                        onClick={(e) => {
-                            e.stopPropagation();
-                            onNext();
-                        }}
+                        onClick={(e) => { e.stopPropagation(); onNext(); }}
                         className="absolute right-4 top-1/2 -translate-y-1/2 z-50 p-4 glass rounded-full hover:bg-white/20 transition-all duration-300 group hover-glow"
                         aria-label="Next image"
                     >
@@ -113,10 +108,11 @@ const Lightbox = ({ images, currentIndex, onClose, onNext, onPrevious, alt = 'Im
                         src={images[currentIndex]}
                         alt={`${alt} ${currentIndex + 1}`}
                         className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
+                        decoding="async"
                     />
                 </motion.div>
 
-                {/* Thumbnail Strip (optional, for multiple images) */}
+                {/* Thumbnail Strip */}
                 {images.length > 1 && (
                     <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-50 flex gap-2 glass px-4 py-3 rounded-full max-w-[90vw] overflow-x-auto">
                         {images.map((image, index) => (
@@ -124,12 +120,7 @@ const Lightbox = ({ images, currentIndex, onClose, onNext, onPrevious, alt = 'Im
                                 key={index}
                                 onClick={(e) => {
                                     e.stopPropagation();
-                                    const diff = index - currentIndex;
-                                    if (diff > 0) {
-                                        for (let i = 0; i < diff; i++) onNext();
-                                    } else if (diff < 0) {
-                                        for (let i = 0; i < Math.abs(diff); i++) onPrevious();
-                                    }
+                                    onGoTo(index); // O(1) direct jump instead of looping onNext/onPrevious
                                 }}
                                 className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden transition-all duration-300 ${index === currentIndex
                                         ? 'ring-2 ring-cyan-400 scale-110'
@@ -140,6 +131,8 @@ const Lightbox = ({ images, currentIndex, onClose, onNext, onPrevious, alt = 'Im
                                     src={image}
                                     alt={`Thumbnail ${index + 1}`}
                                     className="w-full h-full object-cover"
+                                    loading="lazy"
+                                    decoding="async"
                                 />
                             </button>
                         ))}

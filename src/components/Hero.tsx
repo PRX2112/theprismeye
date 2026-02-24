@@ -12,6 +12,9 @@ const Hero = () => {
           src="/images/cs/1.jpg"
           alt="Hero background"
           className="w-full h-full object-cover"
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
         />
         {/* Gradient Overlays */}
         <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/40 to-slate-900/90" />
